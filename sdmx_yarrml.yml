@@ -1,0 +1,87 @@
+prefixes:
+  ex: "http://example.com/"
+  qb: "http://purl.org/linked-data/cube#"
+  skos: "http://www.w3.org/2004/02/skos/core#"
+  scovo: "http://purl.org/NET/scovo#"
+  void: "http://rdfs.org/ns/void#"
+  foaf: "http://xmlns.com/foaf/0.1/"
+  org: "http://www.w3.org/ns/org#"
+  dct: "http://purl.org/dc/terms/"
+  owl: "http://www.w3.org/2002/07/owl#"
+  rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+
+mappings:
+  dsds:
+    sources:
+      - ["./TABLE_I1_meta.xml~xpath", "//KeyFamily"]
+    s: ex:DataStructureDefinition/$(@id)
+    po:
+      - [a, qb:DataStructureDefinition]
+      - [prov:wasAttributedTo, ex:Agency/$(@agencyID)~iri]
+      # - predicates: prov:wasAttributedTo
+      #   objects:
+      #     value: ex:Agency/$(@agencyID)
+      #     type: iri
+  dimensions:
+    sources:
+      - ["./TABLE_I1_meta.xml~xpath", "//KeyFamily/Components/Dimension"]
+    s: ex:Dimension/$(@conceptRef)
+    po:
+      - [a, qb:ComponentSpecification]
+      - [qb:dimension, ex:Concept/$(@conceptRef)~iri]
+  attributes:
+    sources:
+      - ["./TABLE_I1_meta.xml~xpath", "//KeyFamily/Components/Attribute"]
+    s: ex:Attribute/$(@conceptRef)
+    po:
+      - [a, qb:ComponentSpecification]
+      - [qb:attribute, ex:Concept/$(@conceptRef)~iri]
+
+  # Following sections from https://www.w3.org/TR/vocab-data-cube/#schemes
+  concepts:
+    sources:
+      - ["./TABLE_I1_meta.xml~xpath", "//Concept"]
+    s: ex:Concept/$(@id)
+    po:
+      - [a, [rdfs:Class, owl:Class]]
+      - [rdfs:subClassOf, skos:Concept~iri]
+      - [rdfs:label, "$(./Name[@lang='en'])"]
+      # - [
+      #     rdfs:seeAlso,
+      #     "$(//KeyFamily/Components/*[@conceptRef = string(./@id\)]@codelist)"
+      #   ]
+      # - predicates: rdfs:seeAlso
+      #   objects:
+      #   - mapping: project
+      #     condition:
+      #       function: equal
+      #       parameters:
+      #         - [str1, $(projectID), s]
+      #         - [str2, $(ID), o]
+      #  and @codelist]/@codelist)",
+      # , "$(./Name/*[local-name(\) = 'lang'])~lang"]
+      # "$(./Name/*[local-name(\) = 'lang' and .= 'en']/parent\:\:*)"]
+      # *[local-name(\) = 'lang' and .= 'en']
+  codeLists:
+    sources:
+      - ["./TABLE_I1_meta.xml~xpath", "//CodeList"]
+    s: ex:CodeList/$(@id)
+    po:
+      - [a, skos:ConceptScheme]
+      - [[skos:prefLabel, rdfs:label], "$(./Name[@lang='en'])"]
+      - [skos:notation, $(@id)]
+      - [skos:hasTopConcept, ex:CodeList/$(@id)/$(./Code/@value)~iri]
+      # - predicates: skos:hasTopConcept
+      #   objects:
+      #     mapping:
+
+      # TODO: add see also?
+  codes:
+    sources:
+      - ["./TABLE_I1_meta.xml~xpath", "//CodeList/Code"]
+    s: ex:CodeList/$(../@id)/$(@value)
+    po:
+      - [a, skos:Concept] # "ex:ConceptInstance~iri"]
+      - [[skos:prefLabel, rdfs:label], "$(./Description[@lang='en'])"]
+      - [skos:notation, $(@value)]

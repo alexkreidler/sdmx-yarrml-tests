@@ -1,0 +1,1990 @@
+<message:Structure xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" xmlns:common="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common" xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure http://www.sdmx.org/docs/2_0/SDMXStructure.xsd http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message http://www.sdmx.org/docs/2_0/SDMXMessage.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:message="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message">
+    <Header xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message">
+        <ID>
+            none
+            <!--Copyright OECD - All rights reserved
+Terms and Conditions
+http://www.oecd.org/termsandconditions/
+Privacy Policy
+http://www.oecd.org/privacy/
+MyOECD
+https://www.oecd.org/login
+Contact Us
+http://www.oecd.org/contact/
+-->
+        </ID>
+        <Test>false</Test>
+        <Truncated>false</Truncated>
+        <Prepared>2021-03-12T16:02:57</Prepared>
+        <Sender id="OECD">
+            <Name lang="en">Organisation for Economic Co-operation and Development</Name>
+            <Name lang="fr">Organisation de coopération et de développement économiques</Name>
+        </Sender>
+    </Header>
+    <message:CodeLists>
+        <CodeList id="CL_TABLE_I1_COU" agencyID="OECD">
+            <Name lang="en">Country</Name>
+            <Name lang="fr">Pays</Name>
+            <Code value="AUS">
+                <Description lang="en">Australia</Description>
+                <Description lang="fr">Australie</Description>
+            </Code>
+            <Code value="AUT">
+                <Description lang="en">Austria</Description>
+                <Description lang="fr">Autriche</Description>
+            </Code>
+            <Code value="BEL">
+                <Description lang="en">Belgium</Description>
+                <Description lang="fr">Belgique</Description>
+            </Code>
+            <Code value="CAN">
+                <Description lang="en">Canada</Description>
+                <Description lang="fr">Canada</Description>
+            </Code>
+            <Code value="CHL">
+                <Description lang="en">Chile</Description>
+                <Description lang="fr">Chili</Description>
+            </Code>
+            <Code value="CZE">
+                <Description lang="en">Czech Republic</Description>
+                <Description lang="fr">République tchèque</Description>
+            </Code>
+            <Code value="DNK">
+                <Description lang="en">Denmark</Description>
+                <Description lang="fr">Danemark</Description>
+            </Code>
+            <Code value="EST">
+                <Description lang="en">Estonia</Description>
+                <Description lang="fr">Estonie</Description>
+            </Code>
+            <Code value="FIN">
+                <Description lang="en">Finland</Description>
+                <Description lang="fr">Finlande</Description>
+            </Code>
+            <Code value="FRA">
+                <Description lang="en">France</Description>
+                <Description lang="fr">France</Description>
+            </Code>
+            <Code value="DEU">
+                <Description lang="en">Germany</Description>
+                <Description lang="fr">Allemagne</Description>
+            </Code>
+            <Code value="GRC">
+                <Description lang="en">Greece</Description>
+                <Description lang="fr">Grèce</Description>
+            </Code>
+            <Code value="HUN">
+                <Description lang="en">Hungary</Description>
+                <Description lang="fr">Hongrie</Description>
+            </Code>
+            <Code value="ISL">
+                <Description lang="en">Iceland</Description>
+                <Description lang="fr">Islande</Description>
+            </Code>
+            <Code value="IRL">
+                <Description lang="en">Ireland</Description>
+                <Description lang="fr">Irlande</Description>
+            </Code>
+            <Code value="ISR">
+                <Description lang="en">Israel</Description>
+                <Description lang="fr">Israël</Description>
+            </Code>
+            <Code value="ITA">
+                <Description lang="en">Italy</Description>
+                <Description lang="fr">Italie</Description>
+            </Code>
+            <Code value="JPN">
+                <Description lang="en">Japan</Description>
+                <Description lang="fr">Japon</Description>
+            </Code>
+            <Code value="KOR">
+                <Description lang="en">Korea</Description>
+                <Description lang="fr">Corée</Description>
+            </Code>
+            <Code value="LTU">
+                <Description lang="en">Lithuania</Description>
+                <Description lang="fr">Lituanie</Description>
+            </Code>
+            <Code value="LVA">
+                <Description lang="en">Latvia</Description>
+                <Description lang="fr">Lettonie</Description>
+            </Code>
+            <Code value="LUX">
+                <Description lang="en">Luxembourg</Description>
+                <Description lang="fr">Luxembourg</Description>
+            </Code>
+            <Code value="MEX">
+                <Description lang="en">Mexico</Description>
+                <Description lang="fr">Mexique</Description>
+            </Code>
+            <Code value="NLD">
+                <Description lang="en">Netherlands</Description>
+                <Description lang="fr">Pays-Bas</Description>
+            </Code>
+            <Code value="NZL">
+                <Description lang="en">New Zealand</Description>
+                <Description lang="fr">Nouvelle-Zélande</Description>
+            </Code>
+            <Code value="NOR">
+                <Description lang="en">Norway</Description>
+                <Description lang="fr">Norvège</Description>
+            </Code>
+            <Code value="POL">
+                <Description lang="en">Poland</Description>
+                <Description lang="fr">Pologne</Description>
+            </Code>
+            <Code value="PRT">
+                <Description lang="en">Portugal</Description>
+                <Description lang="fr">Portugal</Description>
+            </Code>
+            <Code value="SVK">
+                <Description lang="en">Slovak Republic</Description>
+                <Description lang="fr">République slovaque</Description>
+            </Code>
+            <Code value="SVN">
+                <Description lang="en">Slovenia</Description>
+                <Description lang="fr">Slovénie</Description>
+            </Code>
+            <Code value="ESP">
+                <Description lang="en">Spain</Description>
+                <Description lang="fr">Espagne</Description>
+            </Code>
+            <Code value="SWE">
+                <Description lang="en">Sweden</Description>
+                <Description lang="fr">Suède</Description>
+            </Code>
+            <Code value="CHE">
+                <Description lang="en">Switzerland</Description>
+                <Description lang="fr">Suisse</Description>
+            </Code>
+            <Code value="TUR">
+                <Description lang="en">Turkey</Description>
+                <Description lang="fr">Turquie</Description>
+            </Code>
+            <Code value="GBR">
+                <Description lang="en">United Kingdom</Description>
+                <Description lang="fr">Royaume-Uni</Description>
+            </Code>
+            <Code value="USA">
+                <Description lang="en">United States</Description>
+                <Description lang="fr">États-Unis</Description>
+            </Code>
+        </CodeList>
+        <CodeList id="CL_TABLE_I1_CENTGOV_RATES" agencyID="OECD">
+            <Name lang="en">Central government personal income tax rates and thresholds</Name>
+            <Name lang="fr">Central government personal income tax rates and thresholds</Name>
+            <Code value="PERS_ALL_AMNT">
+                <Description lang="en">Personal allowance</Description>
+                <Description lang="fr">Personal allowance</Description>
+            </Code>
+            <Code value="TAX_CRED_AMNT">
+                <Description lang="en">Tax credit</Description>
+                <Description lang="fr">Tax credit</Description>
+            </Code>
+            <Code value="SURTAX_RATE">
+                <Description lang="en">Surtax rate </Description>
+                <Description lang="fr">Surtax rate </Description>
+            </Code>
+            <Code value="01_MR">
+                <Description lang="en">01 Marginal rate</Description>
+                <Description lang="fr">01 Marginal rate</Description>
+            </Code>
+            <Code value="01_TH" parentCode="01_MR">
+                <Description lang="en">01 Threshold</Description>
+                <Description lang="fr">01 Threshold</Description>
+            </Code>
+            <Code value="02_MR">
+                <Description lang="en">02 Marginal rate</Description>
+                <Description lang="fr">02 Marginal rate</Description>
+            </Code>
+            <Code value="02_TH" parentCode="02_MR">
+                <Description lang="en">02 Threshold</Description>
+                <Description lang="fr">02 Threshold</Description>
+            </Code>
+            <Code value="03_MR">
+                <Description lang="en">03 Marginal rate</Description>
+                <Description lang="fr">03 Marginal rate</Description>
+            </Code>
+            <Code value="03_TH" parentCode="03_MR">
+                <Description lang="en">03 Threshold</Description>
+                <Description lang="fr">03 Threshold</Description>
+            </Code>
+            <Code value="04_MR">
+                <Description lang="en">04 Marginal rate</Description>
+                <Description lang="fr">04 Marginal rate</Description>
+            </Code>
+            <Code value="04_TH" parentCode="04_MR">
+                <Description lang="en">04 Threshold</Description>
+                <Description lang="fr">04 Threshold</Description>
+            </Code>
+            <Code value="05_MR">
+                <Description lang="en">05 Marginal rate</Description>
+                <Description lang="fr">05 Marginal rate</Description>
+            </Code>
+            <Code value="05_TH" parentCode="05_MR">
+                <Description lang="en">05 Threshold</Description>
+                <Description lang="fr">05 Threshold</Description>
+            </Code>
+            <Code value="06_MR">
+                <Description lang="en">06 Marginal rate</Description>
+                <Description lang="fr">06 Marginal rate</Description>
+            </Code>
+            <Code value="06_TH" parentCode="06_MR">
+                <Description lang="en">06 Threshold</Description>
+                <Description lang="fr">06 Threshold</Description>
+            </Code>
+            <Code value="07_MR">
+                <Description lang="en">07 Marginal rate</Description>
+                <Description lang="fr">07 Marginal rate</Description>
+            </Code>
+            <Code value="07_TH" parentCode="07_MR">
+                <Description lang="en">07 Threshold</Description>
+                <Description lang="fr">07 Threshold</Description>
+            </Code>
+            <Code value="08_MR">
+                <Description lang="en">08 Marginal rate</Description>
+                <Description lang="fr">08 Marginal rate</Description>
+            </Code>
+            <Code value="08_TH" parentCode="08_MR">
+                <Description lang="en">08 Threshold</Description>
+                <Description lang="fr">08 Threshold</Description>
+            </Code>
+            <Code value="09_MR">
+                <Description lang="en">09 Marginal rate</Description>
+                <Description lang="fr">09 Marginal rate</Description>
+            </Code>
+            <Code value="09_TH" parentCode="09_MR">
+                <Description lang="en">09 Threshold</Description>
+                <Description lang="fr">09 Threshold</Description>
+            </Code>
+            <Code value="10_MR">
+                <Description lang="en">10 Marginal rate</Description>
+                <Description lang="fr">10 Marginal rate</Description>
+            </Code>
+            <Code value="10_TH" parentCode="10_MR">
+                <Description lang="en">10 Threshold</Description>
+                <Description lang="fr">10 Threshold</Description>
+            </Code>
+            <Code value="11_MR">
+                <Description lang="en">11 Marginal rate</Description>
+                <Description lang="fr">11 Marginal rate</Description>
+            </Code>
+            <Code value="11_TH" parentCode="11_MR">
+                <Description lang="en">11 Threshold</Description>
+                <Description lang="fr">11 Threshold</Description>
+            </Code>
+            <Code value="12_MR">
+                <Description lang="en">12 Marginal rate</Description>
+                <Description lang="fr">12 Marginal rate</Description>
+            </Code>
+            <Code value="12_TH" parentCode="12_MR">
+                <Description lang="en">12 Threshold</Description>
+                <Description lang="fr">12 Threshold</Description>
+            </Code>
+            <Code value="13_MR">
+                <Description lang="en">13 Marginal rate</Description>
+                <Description lang="fr">13 Marginal rate</Description>
+            </Code>
+            <Code value="13_TH" parentCode="13_MR">
+                <Description lang="en">13 Threshold</Description>
+                <Description lang="fr">13 Threshold</Description>
+            </Code>
+            <Code value="14_MR">
+                <Description lang="en">14 Marginal rate</Description>
+                <Description lang="fr">14 Marginal rate</Description>
+            </Code>
+            <Code value="14_TH" parentCode="14_MR">
+                <Description lang="en">14 Threshold</Description>
+                <Description lang="fr">14 Threshold</Description>
+            </Code>
+            <Code value="15_MR">
+                <Description lang="en">15 Marginal rate</Description>
+                <Description lang="fr">15 Marginal rate</Description>
+            </Code>
+            <Code value="15_TH" parentCode="15_MR">
+                <Description lang="en">15 Threshold</Description>
+                <Description lang="fr">15 Threshold</Description>
+            </Code>
+            <Code value="16_MR">
+                <Description lang="en">16 Marginal rate</Description>
+                <Description lang="fr">16 Marginal rate</Description>
+            </Code>
+            <Code value="16_TH" parentCode="16_MR">
+                <Description lang="en">16 Threshold</Description>
+                <Description lang="fr">16 Threshold</Description>
+            </Code>
+            <Code value="17_MR">
+                <Description lang="en">17 Marginal rate</Description>
+                <Description lang="fr">17 Marginal rate</Description>
+            </Code>
+            <Code value="17_TH" parentCode="17_MR">
+                <Description lang="en">17 Threshold</Description>
+                <Description lang="fr">17 Threshold</Description>
+            </Code>
+            <Code value="18_MR">
+                <Description lang="en">18 Marginal rate</Description>
+                <Description lang="fr">18 Marginal rate</Description>
+            </Code>
+            <Code value="18_TH" parentCode="18_MR">
+                <Description lang="en">18 Threshold</Description>
+                <Description lang="fr">18 Threshold</Description>
+            </Code>
+            <Code value="19_MR">
+                <Description lang="en">19 Marginal rate</Description>
+                <Description lang="fr">19 Marginal rate</Description>
+            </Code>
+            <Code value="19_TH" parentCode="19_MR">
+                <Description lang="en">19 Threshold</Description>
+                <Description lang="fr">19 Threshold</Description>
+            </Code>
+            <Code value="20_MR">
+                <Description lang="en">20 Marginal rate</Description>
+                <Description lang="fr">20 Marginal rate</Description>
+            </Code>
+            <Code value="20_TH" parentCode="20_MR">
+                <Description lang="en">20 Threshold</Description>
+                <Description lang="fr">20 Threshold</Description>
+            </Code>
+            <Code value="21_MR">
+                <Description lang="en">21 Marginal rate</Description>
+                <Description lang="fr">21 Marginal rate</Description>
+            </Code>
+            <Code value="21_TH" parentCode="21_MR">
+                <Description lang="en">21 Threshold</Description>
+                <Description lang="fr">21 Threshold</Description>
+            </Code>
+            <Code value="22_MR">
+                <Description lang="en">22 Marginal rate</Description>
+                <Description lang="fr">22 Marginal rate</Description>
+            </Code>
+            <Code value="22_TH" parentCode="22_MR">
+                <Description lang="en">22 Threshold</Description>
+                <Description lang="fr">22 Threshold</Description>
+            </Code>
+            <Code value="23_MR">
+                <Description lang="en">23 Marginal rate</Description>
+                <Description lang="fr">23 Marginal rate</Description>
+            </Code>
+        </CodeList>
+        <CodeList id="CL_TABLE_I1_YEA" agencyID="OECD">
+            <Name lang="en">Year</Name>
+            <Name lang="fr">Année</Name>
+            <Code value="2000">
+                <Description lang="en">2000</Description>
+                <Description lang="fr">2000</Description>
+            </Code>
+            <Code value="2001">
+                <Description lang="en">2001</Description>
+                <Description lang="fr">2001</Description>
+            </Code>
+            <Code value="2002">
+                <Description lang="en">2002</Description>
+                <Description lang="fr">2002</Description>
+            </Code>
+            <Code value="2003">
+                <Description lang="en">2003</Description>
+                <Description lang="fr">2003</Description>
+            </Code>
+            <Code value="2004">
+                <Description lang="en">2004</Description>
+                <Description lang="fr">2004</Description>
+            </Code>
+            <Code value="2005">
+                <Description lang="en">2005</Description>
+                <Description lang="fr">2005</Description>
+            </Code>
+            <Code value="2006">
+                <Description lang="en">2006</Description>
+                <Description lang="fr">2006</Description>
+            </Code>
+            <Code value="2007">
+                <Description lang="en">2007</Description>
+                <Description lang="fr">2007</Description>
+            </Code>
+            <Code value="2008">
+                <Description lang="en">2008</Description>
+                <Description lang="fr">2008</Description>
+            </Code>
+            <Code value="2009">
+                <Description lang="en">2009</Description>
+                <Description lang="fr">2009</Description>
+            </Code>
+            <Code value="2010">
+                <Description lang="en">2010</Description>
+                <Description lang="fr">2010</Description>
+            </Code>
+            <Code value="2011">
+                <Description lang="en">2011</Description>
+                <Description lang="fr">2011</Description>
+            </Code>
+            <Code value="2012">
+                <Description lang="en">2012</Description>
+                <Description lang="fr">2012</Description>
+            </Code>
+            <Code value="2013">
+                <Description lang="en">2013</Description>
+                <Description lang="fr">2013</Description>
+            </Code>
+            <Code value="2014">
+                <Description lang="en">2014</Description>
+                <Description lang="fr">2014</Description>
+            </Code>
+            <Code value="2015">
+                <Description lang="en">2015</Description>
+                <Description lang="fr">2015</Description>
+            </Code>
+            <Code value="2016">
+                <Description lang="en">2016</Description>
+                <Description lang="fr">2016</Description>
+            </Code>
+            <Code value="2017">
+                <Description lang="en">2017</Description>
+                <Description lang="fr">2017</Description>
+            </Code>
+            <Code value="2018">
+                <Description lang="en">2018</Description>
+                <Description lang="fr">2018</Description>
+            </Code>
+            <Code value="2019">
+                <Description lang="en">2019</Description>
+                <Description lang="fr">2019</Description>
+            </Code>
+        </CodeList>
+        <CodeList id="CL_TABLE_I1_OBS_STATUS" agencyID="OECD">
+            <Name lang="en">Observation Status</Name>
+            <Code value="B">
+                <Description lang="en">Break</Description>
+                <Description lang="fr">Rupture</Description>
+            </Code>
+            <Code value="C">
+                <Description lang="en">Non-publishable and confidential value</Description>
+                <Description lang="fr">Valeur non-publiable et confidentielle</Description>
+            </Code>
+            <Code value="D">
+                <Description lang="en">Difference in methodology</Description>
+                <Description lang="fr">Différence de méthodologie</Description>
+            </Code>
+            <Code value="E">
+                <Description lang="en">Estimated value</Description>
+                <Description lang="fr">Valeur estimée</Description>
+            </Code>
+            <Code value="F">
+                <Description lang="en">Forecast value</Description>
+                <Description lang="fr">Valeur projetée</Description>
+            </Code>
+            <Code value="G">
+                <Description lang="en">Experimental value</Description>
+                <Description lang="fr">Estimation expérimentale</Description>
+            </Code>
+            <Code value="R">
+                <Description lang="en">Confidential statistical information due to identifiable</Description>
+                <Description lang="fr">Information statistique confidentielle due à identifiable</Description>
+            </Code>
+            <Code value="S">
+                <Description lang="en">Strike</Description>
+                <Description lang="fr">Grève</Description>
+            </Code>
+            <Code value="U">
+                <Description lang="en">Low reliability</Description>
+                <Description lang="fr">Faible fiabilité</Description>
+            </Code>
+            <Code value="Z">
+                <Description lang="en">Absolute zero observation</Description>
+                <Description lang="fr">Observation zéro absolu</Description>
+            </Code>
+            <Code value="H">
+                <Description lang="en">Missing value, holiday or weekend</Description>
+                <Description lang="fr">Valeur manquante ; jour férié ou fin de semaine</Description>
+            </Code>
+            <Code value="I">
+                <Description lang="en">Incomplete data</Description>
+                <Description lang="fr">donnée incomplète </Description>
+            </Code>
+            <Code value="L">
+                <Description lang="en">Missing value; data exist but were not collected</Description>
+                <Description lang="fr">Valeur manquante ; donnée existe mais n'a pas été collecté</Description>
+            </Code>
+            <Code value="M">
+                <Description lang="en">Missing value; data cannot exist</Description>
+                <Description lang="fr">Valeur manquante ; donnée ne peut pas exister</Description>
+            </Code>
+            <Code value="N">
+                <Description lang="en">Non-publishable, but non-confidential value</Description>
+                <Description lang="fr">Valeur non-publiable, mais non-confidentielle</Description>
+            </Code>
+            <Code value="P">
+                <Description lang="en">Provisional value</Description>
+                <Description lang="fr">Valeur provisoire</Description>
+            </Code>
+            <Code value="a">
+                <Description lang="en">Basic (fixed) allowance</Description>
+                <Description lang="fr">Basic (fixed) allowance</Description>
+            </Code>
+            <Code value="b">
+                <Description lang="en">Basic fixed allowance, tapered</Description>
+                <Description lang="fr">Basic fixed allowance, tapered</Description>
+            </Code>
+            <Code value="c">
+                <Description lang="en">A combination of a basic allowance and an additonal tapered allowance</Description>
+                <Description lang="fr">A combination of a basic allowance and an additonal tapered allowance</Description>
+            </Code>
+            <Code value="d">
+                <Description lang="en">Basic wastable tax credit, non-tapered </Description>
+                <Description lang="fr">Basic wastable tax credit, non-tapered </Description>
+            </Code>
+            <Code value="e">
+                <Description lang="en">Basic wastable tax credit, tapered</Description>
+                <Description lang="fr">Basic wastable tax credit, tapered</Description>
+            </Code>
+            <Code value="f">
+                <Description lang="en">Basic non-wastable tax credit, non-tapered   </Description>
+                <Description lang="fr">Basic non-wastable tax credit, non-tapered   </Description>
+            </Code>
+            <Code value="g">
+                <Description lang="en">Basic non-wastable tax credit, tapered   </Description>
+                <Description lang="fr">Basic non-wastable tax credit, tapered   </Description>
+            </Code>
+            <Code value="h">
+                <Description lang="en">Surtax as % of taxable income </Description>
+                <Description lang="fr">Surtax as % of taxable income </Description>
+            </Code>
+            <Code value="i">
+                <Description lang="en">Surtax as % of gross earnings </Description>
+                <Description lang="fr">Surtax as % of gross earnings </Description>
+            </Code>
+            <Code value="j">
+                <Description lang="en">Surtax as % of central government tax measured gross of tax credit</Description>
+                <Description lang="fr">Surtax as % of central government tax measured gross of tax credit</Description>
+            </Code>
+            <Code value="k">
+                <Description lang="en">Surtax as % of central government tax measured net of tax credit.</Description>
+                <Description lang="fr">Surtax as % of central government tax measured net of tax credit</Description>
+            </Code>
+        </CodeList>
+        <CodeList id="CL_TABLE_I1_UNIT" agencyID="OECD">
+            <Name lang="en">TABLE_I1_UNIT codelist</Name>
+            <Code value="1" parentCode="1">
+                <Description lang="en">RATIOS</Description>
+            </Code>
+            <Code value="GRWH" parentCode="1">
+                <Description lang="en">Growth rate</Description>
+            </Code>
+            <Code value="AVGRW" parentCode="1">
+                <Description lang="en">Average growth rate</Description>
+            </Code>
+            <Code value="IDX" parentCode="1">
+                <Description lang="en">Index</Description>
+            </Code>
+            <Code value="P50P10" parentCode="1">
+                <Description lang="en">Interdecile ratio P50/P10</Description>
+            </Code>
+            <Code value="P90P10" parentCode="1">
+                <Description lang="en">Interdecile ratio P90/P10</Description>
+            </Code>
+            <Code value="P90P50" parentCode="1">
+                <Description lang="en">Interdecile ratio P90/P50</Description>
+            </Code>
+            <Code value="AVSCORE" parentCode="1">
+                <Description lang="en">Average score</Description>
+            </Code>
+            <Code value="NATUSD" parentCode="1">
+                <Description lang="en">National currency per US dollar</Description>
+            </Code>
+            <Code value="OECDIDX" parentCode="1">
+                <Description lang="en">OECD=100</Description>
+            </Code>
+            <Code value="PC" parentCode="1">
+                <Description lang="en">Percentage</Description>
+            </Code>
+            <Code value="RATIO" parentCode="1">
+                <Description lang="en">Ratio</Description>
+            </Code>
+            <Code value="TOEUSD" parentCode="1">
+                <Description lang="en">To be deleted-Toe per 1 000 US dollars</Description>
+            </Code>
+            <Code value="TOE_1000USD" parentCode="1">
+                <Description lang="en">TOE per 1 000 US dollars</Description>
+            </Code>
+            <Code value="USD_KG" parentCode="1">
+                <Description lang="en">US dollars per kilogram</Description>
+            </Code>
+            <Code value="USD_L" parentCode="1">
+                <Description lang="en">US dollars per litre</Description>
+            </Code>
+            <Code value="USD_CO2" parentCode="1">
+                <Description lang="en">US dollars per unit of CO2</Description>
+            </Code>
+            <Code value="USD_BAR" parentCode="1">
+                <Description lang="en">US dollars per barrel</Description>
+            </Code>
+            <Code value="USD_HAB" parentCode="1">
+                <Description lang="en">To be deleted</Description>
+            </Code>
+            <Code value="EUIDX" parentCode="1">
+                <Description lang="en">European Union = 100</Description>
+            </Code>
+            <Code value="NATEU" parentCode="1">
+                <Description lang="en">National currency per Euro</Description>
+            </Code>
+            <Code value="0_EXIST_1_DONTEXIST" parentCode="2">
+                <Description lang="en">0 = Data do not exist / 1 = Data exist</Description>
+            </Code>
+            <Code value="DEATH_1000BIRTH" parentCode="2">
+                <Description lang="en">Deaths per 1 000 live births</Description>
+            </Code>
+            <Code value="EMPLOYED" parentCode="2">
+                <Description lang="en">Employed</Description>
+            </Code>
+            <Code value="ENTR" parentCode="2">
+                <Description lang="en">Enterprises</Description>
+            </Code>
+            <Code value="ESTB" parentCode="2">
+                <Description lang="en">Establishments</Description>
+            </Code>
+            <Code value="1000000HAB" parentCode="2">
+                <Description lang="en">Per 1 000 000 inhabitants</Description>
+            </Code>
+            <Code value="VKM" parentCode="2">
+                <Description lang="en">Vehicle-kilometres</Description>
+            </Code>
+            <Code value="FTE" parentCode="2">
+                <Description lang="en">Full time equivalent</Description>
+            </Code>
+            <Code value="_1000" parentCode="2">
+                <Description lang="en">Per thousand</Description>
+            </Code>
+            <Code value="SE" parentCode="2">
+                <Description lang="en">Standard-error</Description>
+            </Code>
+            <Code value="0_TO_1" parentCode="2">
+                <Description lang="en">0-1 scale</Description>
+            </Code>
+            <Code value="2" parentCode="2">
+                <Description lang="en">NUMBERS</Description>
+            </Code>
+            <Code value="CHLD" parentCode="2">
+                <Description lang="en">Children</Description>
+            </Code>
+            <Code value="DEATH1000" parentCode="2">
+                <Description lang="en">To be deleted-Deaths per 1 000 live births</Description>
+            </Code>
+            <Code value="EMPLOYEE" parentCode="2">
+                <Description lang="en">Employee</Description>
+            </Code>
+            <Code value="HAB" parentCode="2">
+                <Description lang="en">Inhabitants</Description>
+            </Code>
+            <Code value="JOB" parentCode="2">
+                <Description lang="en">Jobs</Description>
+            </Code>
+            <Code value="NBR" parentCode="2">
+                <Description lang="en">Number</Description>
+            </Code>
+            <Code value="PKM" parentCode="2">
+                <Description lang="en">Passenger-kilometres</Description>
+            </Code>
+            <Code value="1000HAB" parentCode="2">
+                <Description lang="en">Per 1 000 inhabitants</Description>
+            </Code>
+            <Code value="100000HAB" parentCode="2">
+                <Description lang="en">Per 100 000 inhabitants</Description>
+            </Code>
+            <Code value="100HAB" parentCode="2">
+                <Description lang="en">Per 100 inhabitants</Description>
+            </Code>
+            <Code value="PC_PNT" parentCode="2">
+                <Description lang="en">Percentage points</Description>
+            </Code>
+            <Code value="PER" parentCode="2">
+                <Description lang="en">Persons</Description>
+            </Code>
+            <Code value="3" parentCode="3">
+                <Description lang="en">TIME</Description>
+            </Code>
+            <Code value="DAY" parentCode="3">
+                <Description lang="en">Days</Description>
+            </Code>
+            <Code value="HOUR" parentCode="3">
+                <Description lang="en">Hours</Description>
+            </Code>
+            <Code value="HPYPP" parentCode="3">
+                <Description lang="en">Hours per year per person</Description>
+            </Code>
+            <Code value="MONTH" parentCode="3">
+                <Description lang="en">Months</Description>
+            </Code>
+            <Code value="YR" parentCode="3">
+                <Description lang="en">Years</Description>
+            </Code>
+            <Code value="MPD" parentCode="3">
+                <Description lang="en">Minutes per day</Description>
+            </Code>
+            <Code value="WEEK" parentCode="3">
+                <Description lang="en">Weeks</Description>
+            </Code>
+            <Code value="DPYPP" parentCode="3">
+                <Description lang="en">Days per year per person</Description>
+            </Code>
+            <Code value="LT_HAB" parentCode="4">
+                <Description lang="en">Litres per capita</Description>
+            </Code>
+            <Code value="KCAL_HAB" parentCode="4">
+                <Description lang="en">Kilocalories per capita</Description>
+            </Code>
+            <Code value="G_HAB" parentCode="4">
+                <Description lang="en">Grams per capita</Description>
+            </Code>
+            <Code value="BAR_DAY" parentCode="4">
+                <Description lang="en">Barrels per day</Description>
+            </Code>
+            <Code value="BAR" parentCode="4">
+                <Description lang="en">Barrels</Description>
+            </Code>
+            <Code value="TONNE_ANIMAL" parentCode="4">
+                <Description lang="en">Tonnes per animal</Description>
+            </Code>
+            <Code value="TONNE_HA" parentCode="4">
+                <Description lang="en">Tonnes per hectare</Description>
+            </Code>
+            <Code value="KOE_HAB" parentCode="4">
+                <Description lang="en">Kilograms of oil equivalent per capita</Description>
+            </Code>
+            <Code value="MICRO_M3" parentCode="4">
+                <Description lang="en">Micrograms per cubic metre</Description>
+            </Code>
+            <Code value="TONNE_1000USD" parentCode="4">
+                <Description lang="en">Tonnes per 1 000 US dollars</Description>
+            </Code>
+            <Code value="GWH" parentCode="4">
+                <Description lang="en">Gigawatt hours</Description>
+            </Code>
+            <Code value="KG_1000USD" parentCode="4">
+                <Description lang="en">Kilograms per 1 000 US dollars</Description>
+            </Code>
+            <Code value="MICRO_L" parentCode="4">
+                <Description lang="en">Micrograms per litre</Description>
+            </Code>
+            <Code value="MILLI_L" parentCode="4">
+                <Description lang="en">Milligrams per litre </Description>
+            </Code>
+            <Code value="T_CO2_EQVT" parentCode="4">
+                <Description lang="en">Tonnes of CO2 equivalent</Description>
+            </Code>
+            <Code value="4" parentCode="4">
+                <Description lang="en">PHYSICAL MEASURES</Description>
+            </Code>
+            <Code value="CAR" parentCode="4">
+                <Description lang="en">Carats</Description>
+            </Code>
+            <Code value="CUR" parentCode="4">
+                <Description lang="en">Curies</Description>
+            </Code>
+            <Code value="KG" parentCode="4">
+                <Description lang="en">Kilograms</Description>
+            </Code>
+            <Code value="KG_HAB" parentCode="4">
+                <Description lang="en">Kilograms per capita</Description>
+            </Code>
+            <Code value="KM" parentCode="4">
+                <Description lang="en">Kilometres</Description>
+            </Code>
+            <Code value="KM2" parentCode="4">
+                <Description lang="en">Square kilometres</Description>
+            </Code>
+            <Code value="HA" parentCode="4">
+                <Description lang="en">Hectares</Description>
+            </Code>
+            <Code value="KW" parentCode="4">
+                <Description lang="en">Kilowatts</Description>
+            </Code>
+            <Code value="KWH" parentCode="4">
+                <Description lang="en">Kilowatt hours</Description>
+            </Code>
+            <Code value="LT" parentCode="4">
+                <Description lang="en">Litres</Description>
+            </Code>
+            <Code value="M2" parentCode="4">
+                <Description lang="en">Square metres</Description>
+            </Code>
+            <Code value="M3" parentCode="4">
+                <Description lang="en">Cubic metres</Description>
+            </Code>
+            <Code value="M3CAP" parentCode="4">
+                <Description lang="en">Cubic metres per capita</Description>
+            </Code>
+            <Code value="METRE" parentCode="4">
+                <Description lang="en">Metres</Description>
+            </Code>
+            <Code value="TWH" parentCode="4">
+                <Description lang="en">Terawatt hours</Description>
+            </Code>
+            <Code value="TONNE" parentCode="4">
+                <Description lang="en">Tonnes</Description>
+            </Code>
+            <Code value="TONNEKM" parentCode="4">
+                <Description lang="en">Tonnes-kilometres</Description>
+            </Code>
+            <Code value="TOE" parentCode="4">
+                <Description lang="en">Tonnes of oil equivalent (toe)</Description>
+            </Code>
+            <Code value="5" parentCode="5">
+                <Description lang="en">CURRENCIES</Description>
+            </Code>
+            <Code value="AED" parentCode="5">
+                <Description lang="en">Dirham from the United Arab Emirates</Description>
+            </Code>
+            <Code value="AFA" parentCode="5">
+                <Description lang="en">Afghani (old)</Description>
+            </Code>
+            <Code value="AFN" parentCode="5">
+                <Description lang="en">Afghani</Description>
+            </Code>
+            <Code value="ALL" parentCode="5">
+                <Description lang="en">Lek</Description>
+            </Code>
+            <Code value="AMD" parentCode="5">
+                <Description lang="en">Armenian Dram</Description>
+            </Code>
+            <Code value="ANG" parentCode="5">
+                <Description lang="en">Netherlands Antillian Guilder</Description>
+            </Code>
+            <Code value="AOA" parentCode="5">
+                <Description lang="en">Kwanza</Description>
+            </Code>
+            <Code value="ARS" parentCode="5">
+                <Description lang="en">Argentine Peso</Description>
+            </Code>
+            <Code value="ATS" parentCode="5">
+                <Description lang="en">Austrian Schilling</Description>
+            </Code>
+            <Code value="AUD" parentCode="5">
+                <Description lang="en">Australian Dollar</Description>
+            </Code>
+            <Code value="AWG" parentCode="5">
+                <Description lang="en">Aruban Guilder</Description>
+            </Code>
+            <Code value="AZM" parentCode="5">
+                <Description lang="en">Azerbaijanian Manat (old)</Description>
+            </Code>
+            <Code value="AZN" parentCode="5">
+                <Description lang="en">Azerbaijanian Manat</Description>
+            </Code>
+            <Code value="BAM" parentCode="5">
+                <Description lang="en">Convertible Marks</Description>
+            </Code>
+            <Code value="BBD" parentCode="5">
+                <Description lang="en">Barbados Dollar</Description>
+            </Code>
+            <Code value="BDT" parentCode="5">
+                <Description lang="en">Taka</Description>
+            </Code>
+            <Code value="BEF" parentCode="5">
+                <Description lang="en">Belgian Franc</Description>
+            </Code>
+            <Code value="BGN" parentCode="5">
+                <Description lang="en">Bulgarian Lev</Description>
+            </Code>
+            <Code value="BHD" parentCode="5">
+                <Description lang="en">Bahraini Dinar</Description>
+            </Code>
+            <Code value="BIF" parentCode="5">
+                <Description lang="en">Burundi Franc</Description>
+            </Code>
+            <Code value="BMD" parentCode="5">
+                <Description lang="en">Bermudian Dollar</Description>
+            </Code>
+            <Code value="BND" parentCode="5">
+                <Description lang="en">Brunei Dollar</Description>
+            </Code>
+            <Code value="BOB" parentCode="5">
+                <Description lang="en">Boliviano</Description>
+            </Code>
+            <Code value="BOV" parentCode="5">
+                <Description lang="en">Mvdol</Description>
+            </Code>
+            <Code value="BRL" parentCode="5">
+                <Description lang="en">Brazilian Real</Description>
+            </Code>
+            <Code value="BSD" parentCode="5">
+                <Description lang="en">Bahamian Dollar</Description>
+            </Code>
+            <Code value="BTN" parentCode="5">
+                <Description lang="en">Ngultrum</Description>
+            </Code>
+            <Code value="BWP" parentCode="5">
+                <Description lang="en">Pula</Description>
+            </Code>
+            <Code value="BYR" parentCode="5">
+                <Description lang="en">Belarussian Ruble (before Jul.2016)</Description>
+            </Code>
+            <Code value="BZD" parentCode="5">
+                <Description lang="en">Belize Dollar</Description>
+            </Code>
+            <Code value="CAD" parentCode="5">
+                <Description lang="en">Canadian Dollar</Description>
+            </Code>
+            <Code value="CDF" parentCode="5">
+                <Description lang="en">Franc Congolais</Description>
+            </Code>
+            <Code value="CFA" parentCode="5">
+                <Description lang="en">CFA Franc</Description>
+            </Code>
+            <Code value="CHE" parentCode="5">
+                <Description lang="en">WIR Euro</Description>
+            </Code>
+            <Code value="CHF" parentCode="5">
+                <Description lang="en">Swiss Franc</Description>
+            </Code>
+            <Code value="CHW" parentCode="5">
+                <Description lang="en">WIR Franc</Description>
+            </Code>
+            <Code value="CLF" parentCode="5">
+                <Description lang="en">Unidad de formento (UF)</Description>
+            </Code>
+            <Code value="CLP" parentCode="5">
+                <Description lang="en">Chilean Peso</Description>
+            </Code>
+            <Code value="CNY" parentCode="5">
+                <Description lang="en">Yuan Renminbi</Description>
+            </Code>
+            <Code value="COP" parentCode="5">
+                <Description lang="en">Colombian Peso</Description>
+            </Code>
+            <Code value="COU" parentCode="5">
+                <Description lang="en">Unidad de valor real</Description>
+            </Code>
+            <Code value="CRC" parentCode="5">
+                <Description lang="en">Costa Rican Colon</Description>
+            </Code>
+            <Code value="CSD" parentCode="5">
+                <Description lang="en">Dinar of Serbia and Montenegro</Description>
+            </Code>
+            <Code value="CUP" parentCode="5">
+                <Description lang="en">Cuban Peso</Description>
+            </Code>
+            <Code value="CVE" parentCode="5">
+                <Description lang="en">Cape Verde Escudo</Description>
+            </Code>
+            <Code value="CYP" parentCode="5">
+                <Description lang="en">Cyprus Pound</Description>
+            </Code>
+            <Code value="CZK" parentCode="5">
+                <Description lang="en">Czech Koruna</Description>
+            </Code>
+            <Code value="DEM" parentCode="5">
+                <Description lang="en">German Mark</Description>
+            </Code>
+            <Code value="DJF" parentCode="5">
+                <Description lang="en">Djibouti Franc</Description>
+            </Code>
+            <Code value="DKK" parentCode="5">
+                <Description lang="en">Danish Krone</Description>
+            </Code>
+            <Code value="DOP" parentCode="5">
+                <Description lang="en">Dominican Peso</Description>
+            </Code>
+            <Code value="DZD" parentCode="5">
+                <Description lang="en">Algerian Dinar</Description>
+            </Code>
+            <Code value="ECV" parentCode="5">
+                <Description lang="en">Unidad de Valor Constante</Description>
+            </Code>
+            <Code value="EEK" parentCode="5">
+                <Description lang="en">Kroon</Description>
+            </Code>
+            <Code value="EGP" parentCode="5">
+                <Description lang="en">Egyptian Pound</Description>
+            </Code>
+            <Code value="ERN" parentCode="5">
+                <Description lang="en">Nakfa</Description>
+            </Code>
+            <Code value="ESP" parentCode="5">
+                <Description lang="en">Spanish Peseta</Description>
+            </Code>
+            <Code value="ETB" parentCode="5">
+                <Description lang="en">Ethiopian Birr</Description>
+            </Code>
+            <Code value="EUR" parentCode="5">
+                <Description lang="en">Euro</Description>
+            </Code>
+            <Code value="FIM" parentCode="5">
+                <Description lang="en">Finnish Markka</Description>
+            </Code>
+            <Code value="FJD" parentCode="5">
+                <Description lang="en">Fiji Dollar</Description>
+            </Code>
+            <Code value="FKP" parentCode="5">
+                <Description lang="en">Falkland Islands Pound</Description>
+            </Code>
+            <Code value="FRF" parentCode="5">
+                <Description lang="en">French Franc</Description>
+            </Code>
+            <Code value="GBP" parentCode="5">
+                <Description lang="en">Pound Sterling</Description>
+            </Code>
+            <Code value="GEL" parentCode="5">
+                <Description lang="en">Lari</Description>
+            </Code>
+            <Code value="GHC" parentCode="5">
+                <Description lang="en">Ghana Cedi (old)</Description>
+            </Code>
+            <Code value="GHS" parentCode="5">
+                <Description lang="en">Ghana Cedi</Description>
+            </Code>
+            <Code value="GIP" parentCode="5">
+                <Description lang="en">Gibraltar Pound</Description>
+            </Code>
+            <Code value="GMD" parentCode="5">
+                <Description lang="en">Dalasi</Description>
+            </Code>
+            <Code value="GNF" parentCode="5">
+                <Description lang="en">Guinea Franc</Description>
+            </Code>
+            <Code value="GRD" parentCode="5">
+                <Description lang="en">Greek Drachma</Description>
+            </Code>
+            <Code value="GTQ" parentCode="5">
+                <Description lang="en">Quetzal</Description>
+            </Code>
+            <Code value="GWP" parentCode="5">
+                <Description lang="en">Guinea-Bissau Peso</Description>
+            </Code>
+            <Code value="GYD" parentCode="5">
+                <Description lang="en">Guyana Dollar</Description>
+            </Code>
+            <Code value="HKD" parentCode="5">
+                <Description lang="en">Hong Kong Dollar</Description>
+            </Code>
+            <Code value="HNL" parentCode="5">
+                <Description lang="en">Lempira</Description>
+            </Code>
+            <Code value="HRK" parentCode="5">
+                <Description lang="en">Croatian Kuna</Description>
+            </Code>
+            <Code value="HTG" parentCode="5">
+                <Description lang="en">Gourde</Description>
+            </Code>
+            <Code value="HUF" parentCode="5">
+                <Description lang="en">Forint</Description>
+            </Code>
+            <Code value="IDR" parentCode="5">
+                <Description lang="en">Rupiah</Description>
+            </Code>
+            <Code value="IEP" parentCode="5">
+                <Description lang="en">Irish Pound</Description>
+            </Code>
+            <Code value="ILS" parentCode="5">
+                <Description lang="en">New Israeli Sheqel</Description>
+            </Code>
+            <Code value="INR" parentCode="5">
+                <Description lang="en">Indian Rupee</Description>
+            </Code>
+            <Code value="IQD" parentCode="5">
+                <Description lang="en">Iraqi Dinar</Description>
+            </Code>
+            <Code value="IRR" parentCode="5">
+                <Description lang="en">Iranian Rial</Description>
+            </Code>
+            <Code value="ISK" parentCode="5">
+                <Description lang="en">Iceland Krona</Description>
+            </Code>
+            <Code value="ITL" parentCode="5">
+                <Description lang="en">Italian Lira</Description>
+            </Code>
+            <Code value="JMD" parentCode="5">
+                <Description lang="en">Jamaican Dollar</Description>
+            </Code>
+            <Code value="JOD" parentCode="5">
+                <Description lang="en">Jordanian Dinar</Description>
+            </Code>
+            <Code value="JPY" parentCode="5">
+                <Description lang="en">Yen</Description>
+            </Code>
+            <Code value="KES" parentCode="5">
+                <Description lang="en">Kenyan Shilling</Description>
+            </Code>
+            <Code value="KGS" parentCode="5">
+                <Description lang="en">Som</Description>
+            </Code>
+            <Code value="KHR" parentCode="5">
+                <Description lang="en">Riel</Description>
+            </Code>
+            <Code value="KMF" parentCode="5">
+                <Description lang="en">Comoro Franc</Description>
+            </Code>
+            <Code value="KPW" parentCode="5">
+                <Description lang="en">North Korean Won</Description>
+            </Code>
+            <Code value="KRW" parentCode="5">
+                <Description lang="en">Won</Description>
+            </Code>
+            <Code value="KWD" parentCode="5">
+                <Description lang="en">Kuwaiti Dinar</Description>
+            </Code>
+            <Code value="KYD" parentCode="5">
+                <Description lang="en">Cayman Islands Dollar</Description>
+            </Code>
+            <Code value="KZT" parentCode="5">
+                <Description lang="en">Tenge</Description>
+            </Code>
+            <Code value="LAK" parentCode="5">
+                <Description lang="en">Kip</Description>
+            </Code>
+            <Code value="LBP" parentCode="5">
+                <Description lang="en">Lebanese Pound</Description>
+            </Code>
+            <Code value="LKR" parentCode="5">
+                <Description lang="en">Sri Lanka Rupee</Description>
+            </Code>
+            <Code value="LRD" parentCode="5">
+                <Description lang="en">Liberian Dollar</Description>
+            </Code>
+            <Code value="LSL" parentCode="5">
+                <Description lang="en">Loti</Description>
+            </Code>
+            <Code value="LTL" parentCode="5">
+                <Description lang="en">Lithuanian Litas</Description>
+            </Code>
+            <Code value="LUF" parentCode="5">
+                <Description lang="en">Luxembourg Franc</Description>
+            </Code>
+            <Code value="LVL" parentCode="5">
+                <Description lang="en">Latvian Lats</Description>
+            </Code>
+            <Code value="LYD" parentCode="5">
+                <Description lang="en">Libyan Dinar</Description>
+            </Code>
+            <Code value="MAD" parentCode="5">
+                <Description lang="en">Moroccan Dirham</Description>
+            </Code>
+            <Code value="MDL" parentCode="5">
+                <Description lang="en">Moldovan Leu</Description>
+            </Code>
+            <Code value="MGA" parentCode="5">
+                <Description lang="en">Malagasy Ariary</Description>
+            </Code>
+            <Code value="MGF" parentCode="5">
+                <Description lang="en">Malagasy Franc</Description>
+            </Code>
+            <Code value="MKD" parentCode="5">
+                <Description lang="en">Denar</Description>
+            </Code>
+            <Code value="MMK" parentCode="5">
+                <Description lang="en">Kyat</Description>
+            </Code>
+            <Code value="MNT" parentCode="5">
+                <Description lang="en">Tugrik</Description>
+            </Code>
+            <Code value="MOP" parentCode="5">
+                <Description lang="en">Pataca</Description>
+            </Code>
+            <Code value="MRO" parentCode="5">
+                <Description lang="en">Ouguiya</Description>
+            </Code>
+            <Code value="MTL" parentCode="5">
+                <Description lang="en">Maltese Lira</Description>
+            </Code>
+            <Code value="MUR" parentCode="5">
+                <Description lang="en">Mauritius Rupee</Description>
+            </Code>
+            <Code value="MVR" parentCode="5">
+                <Description lang="en">Rufiyaa</Description>
+            </Code>
+            <Code value="MWK" parentCode="5">
+                <Description lang="en">Kwacha</Description>
+            </Code>
+            <Code value="MXN" parentCode="5">
+                <Description lang="en">Mexican Peso</Description>
+            </Code>
+            <Code value="MXP" parentCode="5">
+                <Description lang="en">Mexican peso (old)</Description>
+            </Code>
+            <Code value="MXV" parentCode="5">
+                <Description lang="en">Mexican Unidad de Inversion (UDI)</Description>
+            </Code>
+            <Code value="MYR" parentCode="5">
+                <Description lang="en">Malaysian Ringgit</Description>
+            </Code>
+            <Code value="MZM" parentCode="5">
+                <Description lang="en">Metical (old)</Description>
+            </Code>
+            <Code value="MZN" parentCode="5">
+                <Description lang="en">Metical</Description>
+            </Code>
+            <Code value="NAD" parentCode="5">
+                <Description lang="en">Namibia Dollar</Description>
+            </Code>
+            <Code value="NGN" parentCode="5">
+                <Description lang="en">Naira</Description>
+            </Code>
+            <Code value="NIO" parentCode="5">
+                <Description lang="en">Cordoba Oro</Description>
+            </Code>
+            <Code value="NLG" parentCode="5">
+                <Description lang="en">Netherlands Guilder</Description>
+            </Code>
+            <Code value="NOK" parentCode="5">
+                <Description lang="en">Norwegian Krone</Description>
+            </Code>
+            <Code value="NPR" parentCode="5">
+                <Description lang="en">Nepalese Rupee</Description>
+            </Code>
+            <Code value="NZD" parentCode="5">
+                <Description lang="en">New Zealand Dollar</Description>
+            </Code>
+            <Code value="OMR" parentCode="5">
+                <Description lang="en">Rial Omani</Description>
+            </Code>
+            <Code value="PAB" parentCode="5">
+                <Description lang="en">Balboa</Description>
+            </Code>
+            <Code value="PEN" parentCode="5">
+                <Description lang="en">Nuevo Sol</Description>
+            </Code>
+            <Code value="PGK" parentCode="5">
+                <Description lang="en">Kina</Description>
+            </Code>
+            <Code value="PHP" parentCode="5">
+                <Description lang="en">Philippine Peso</Description>
+            </Code>
+            <Code value="PKR" parentCode="5">
+                <Description lang="en">Pakistan Rupee</Description>
+            </Code>
+            <Code value="PLN" parentCode="5">
+                <Description lang="en">Zloty</Description>
+            </Code>
+            <Code value="PTE" parentCode="5">
+                <Description lang="en">Portugese Escudo</Description>
+            </Code>
+            <Code value="PYG" parentCode="5">
+                <Description lang="en">Guarani</Description>
+            </Code>
+            <Code value="QAR" parentCode="5">
+                <Description lang="en">Qatari Rial</Description>
+            </Code>
+            <Code value="ROL" parentCode="5">
+                <Description lang="en">Romanian Leu (old)</Description>
+            </Code>
+            <Code value="RON" parentCode="5">
+                <Description lang="en">Romanian Leu</Description>
+            </Code>
+            <Code value="RSD" parentCode="5">
+                <Description lang="en">Serbian Dinar</Description>
+            </Code>
+            <Code value="RUB" parentCode="5">
+                <Description lang="en">Russian Ruble</Description>
+            </Code>
+            <Code value="RWF" parentCode="5">
+                <Description lang="en">Rwanda Franc</Description>
+            </Code>
+            <Code value="SAR" parentCode="5">
+                <Description lang="en">Saudi Riyal</Description>
+            </Code>
+            <Code value="SBD" parentCode="5">
+                <Description lang="en">Solomon Islands Dollar</Description>
+            </Code>
+            <Code value="SCR" parentCode="5">
+                <Description lang="en">Seychelles Rupee</Description>
+            </Code>
+            <Code value="SDD" parentCode="5">
+                <Description lang="en">Sudanese Dinar</Description>
+            </Code>
+            <Code value="SDG" parentCode="5">
+                <Description lang="en">Sudanese Pound</Description>
+            </Code>
+            <Code value="SEK" parentCode="5">
+                <Description lang="en">Swedish Krona</Description>
+            </Code>
+            <Code value="SGD" parentCode="5">
+                <Description lang="en">Singapore Dollar</Description>
+            </Code>
+            <Code value="SHP" parentCode="5">
+                <Description lang="en">Saint Helena Pound</Description>
+            </Code>
+            <Code value="SIT" parentCode="5">
+                <Description lang="en">Slovenian Tolar</Description>
+            </Code>
+            <Code value="SKK" parentCode="5">
+                <Description lang="en">Slovak Koruna</Description>
+            </Code>
+            <Code value="SLL" parentCode="5">
+                <Description lang="en">Leone</Description>
+            </Code>
+            <Code value="SOS" parentCode="5">
+                <Description lang="en">Somali Shilling</Description>
+            </Code>
+            <Code value="SRD" parentCode="5">
+                <Description lang="en">Surinam Dollar</Description>
+            </Code>
+            <Code value="SSP" parentCode="5">
+                <Description lang="en">South-Sudanese Pound</Description>
+            </Code>
+            <Code value="STD" parentCode="5">
+                <Description lang="en">Dobra</Description>
+            </Code>
+            <Code value="SVC" parentCode="5">
+                <Description lang="en">El Salvador Colon</Description>
+            </Code>
+            <Code value="SYP" parentCode="5">
+                <Description lang="en">Syrian Pound</Description>
+            </Code>
+            <Code value="SZL" parentCode="5">
+                <Description lang="en">Lilangeni</Description>
+            </Code>
+            <Code value="THB" parentCode="5">
+                <Description lang="en">Baht</Description>
+            </Code>
+            <Code value="TJS" parentCode="5">
+                <Description lang="en">Somoni</Description>
+            </Code>
+            <Code value="TMM" parentCode="5">
+                <Description lang="en">Turkmen Manat (old)</Description>
+            </Code>
+            <Code value="TMT" parentCode="5">
+                <Description lang="en">Turkmen Manat</Description>
+            </Code>
+            <Code value="TND" parentCode="5">
+                <Description lang="en">Tunisian Dinar</Description>
+            </Code>
+            <Code value="TOP" parentCode="5">
+                <Description lang="en">Pa'anga</Description>
+            </Code>
+            <Code value="TRL" parentCode="5">
+                <Description lang="en">Turkish Lira (old)</Description>
+            </Code>
+            <Code value="TRY" parentCode="5">
+                <Description lang="en">Turkish Lira</Description>
+            </Code>
+            <Code value="TTD" parentCode="5">
+                <Description lang="en">Trinidad and Tobago Dollar</Description>
+            </Code>
+            <Code value="TWD" parentCode="5">
+                <Description lang="en">New Taiwan Dollar</Description>
+            </Code>
+            <Code value="TZS" parentCode="5">
+                <Description lang="en">Tanzanian Shilling</Description>
+            </Code>
+            <Code value="UAH" parentCode="5">
+                <Description lang="en">Hryvnia</Description>
+            </Code>
+            <Code value="UGX" parentCode="5">
+                <Description lang="en">Uganda Shilling</Description>
+            </Code>
+            <Code value="USD" parentCode="5">
+                <Description lang="en">US Dollar</Description>
+            </Code>
+            <Code value="USN" parentCode="5">
+                <Description lang="en">Dollar (Next day)</Description>
+            </Code>
+            <Code value="USS" parentCode="5">
+                <Description lang="en">Dollar (Same day)</Description>
+            </Code>
+            <Code value="UYI" parentCode="5">
+                <Description lang="en">Uruguay Peso en Unidades Indexadas</Description>
+            </Code>
+            <Code value="UYU" parentCode="5">
+                <Description lang="en">Peso Uruguayo</Description>
+            </Code>
+            <Code value="UZS" parentCode="5">
+                <Description lang="en">Uzbekistan Sum</Description>
+            </Code>
+            <Code value="VEB" parentCode="5">
+                <Description lang="en">Bolívar (old)</Description>
+            </Code>
+            <Code value="VEF" parentCode="5">
+                <Description lang="en">Bolívar fuerte</Description>
+            </Code>
+            <Code value="VND" parentCode="5">
+                <Description lang="en">Dong</Description>
+            </Code>
+            <Code value="VUV" parentCode="5">
+                <Description lang="en">Vatu</Description>
+            </Code>
+            <Code value="WST" parentCode="5">
+                <Description lang="en">Tala</Description>
+            </Code>
+            <Code value="XAF" parentCode="5">
+                <Description lang="en">CFA Franc - BEAC</Description>
+            </Code>
+            <Code value="XAG" parentCode="5">
+                <Description lang="en">Silver</Description>
+            </Code>
+            <Code value="XAU" parentCode="5">
+                <Description lang="en">Gold</Description>
+            </Code>
+            <Code value="XBA" parentCode="5">
+                <Description lang="en">Bond Markets Units European Composite Unit (EURCO)</Description>
+            </Code>
+            <Code value="XBB" parentCode="5">
+                <Description lang="en">European Monetary Unit (E.M.U.-6)</Description>
+            </Code>
+            <Code value="XBC" parentCode="5">
+                <Description lang="en">European Unit of Account 9 (E.U.A.-9)</Description>
+            </Code>
+            <Code value="XBD" parentCode="5">
+                <Description lang="en">European Unit of Account 17 (E.U.A.-17)</Description>
+            </Code>
+            <Code value="XCD" parentCode="5">
+                <Description lang="en">East Caribbean Dollar</Description>
+            </Code>
+            <Code value="XDR" parentCode="5">
+                <Description lang="en">Special Drawing Rights</Description>
+            </Code>
+            <Code value="XEU" parentCode="5">
+                <Description lang="en">European Currency Unit (ECU)</Description>
+            </Code>
+            <Code value="XFO" parentCode="5">
+                <Description lang="en">Gold-Franc</Description>
+            </Code>
+            <Code value="XFU" parentCode="5">
+                <Description lang="en">UIC-Franc</Description>
+            </Code>
+            <Code value="XOF" parentCode="5">
+                <Description lang="en">CFA Franc - BCEAO</Description>
+            </Code>
+            <Code value="XPD" parentCode="5">
+                <Description lang="en">Palladium</Description>
+            </Code>
+            <Code value="XPF" parentCode="5">
+                <Description lang="en">CFP Franc</Description>
+            </Code>
+            <Code value="XPT" parentCode="5">
+                <Description lang="en">Platinum</Description>
+            </Code>
+            <Code value="XTS" parentCode="5">
+                <Description lang="en">Code specifically reserved for testing purposes</Description>
+            </Code>
+            <Code value="XXX" parentCode="5">
+                <Description lang="en">Transactions whithout currency</Description>
+            </Code>
+            <Code value="YER" parentCode="5">
+                <Description lang="en">Yemeni Rial</Description>
+            </Code>
+            <Code value="ZAR" parentCode="5">
+                <Description lang="en">Rand</Description>
+            </Code>
+            <Code value="ZMK" parentCode="5">
+                <Description lang="en">Kwacha (old)</Description>
+            </Code>
+            <Code value="ZMW" parentCode="5">
+                <Description lang="en">Kwacha</Description>
+            </Code>
+            <Code value="ZWD" parentCode="5">
+                <Description lang="en">Zimbabwe Dollar (before Sept.2008)</Description>
+            </Code>
+            <Code value="ZWL" parentCode="5">
+                <Description lang="en">Zimbabwe Dollar (before Feb.2009)</Description>
+            </Code>
+            <Code value="ZWR" parentCode="5">
+                <Description lang="en">Zimbabwe Dollar</Description>
+            </Code>
+            <Code value="NATCUR" parentCode="5">
+                <Description lang="en">National currency</Description>
+            </Code>
+            <Code value="NATCUR_HL" parentCode="5">
+                <Description lang="en">National currency per hectolitre</Description>
+            </Code>
+            <Code value="NATCUR_TONNE" parentCode="5">
+                <Description lang="en">National currency per tonne</Description>
+            </Code>
+            <Code value="USD_HL" parentCode="5">
+                <Description lang="en">US Dollar per hectolitre</Description>
+            </Code>
+            <Code value="USD_TONNE" parentCode="5">
+                <Description lang="en">US Dollar per tonne</Description>
+            </Code>
+            <Code value="VES" parentCode="5">
+                <Description lang="en">Bolívar Soberano</Description>
+            </Code>
+            <Code value="BYN" parentCode="5">
+                <Description lang="en">Belarussian Ruble</Description>
+            </Code>
+            <Code value="SUBS" parentCode="SUBS">
+                <Description lang="en">Subscriptions</Description>
+            </Code>
+            <Code value="S90S40" parentCode="S90S40">
+                <Description lang="en">S90/S40 decile share</Description>
+            </Code>
+            <Code value="S90S10" parentCode="S90S10">
+                <Description lang="en">S90/S10 decile share</Description>
+            </Code>
+            <Code value="S80S20" parentCode="S80S20">
+                <Description lang="en">S80/S20 quintile share</Description>
+            </Code>
+            <Code value="CODE" parentCode="CODE">
+                <Description lang="en">English Name</Description>
+            </Code>
+            <Code value="TONNE_1000000USD" parentCode="TONNE_1000000USD">
+                <Description lang="en">Tonnes per USD million</Description>
+            </Code>
+            <Code value="EUR_TCO2" parentCode="EUR_TCO2">
+                <Description lang="en">Euro per tonne of CO2</Description>
+            </Code>
+        </CodeList>
+        <CodeList id="CL_TABLE_I1_POWERCODE" agencyID="OECD">
+            <Name lang="en">TABLE_I1_POWERCODE codelist</Name>
+            <Code value="0" parentCode="0">
+                <Description lang="en">Units</Description>
+            </Code>
+            <Code value="1" parentCode="1">
+                <Description lang="en">Tens</Description>
+            </Code>
+            <Code value="2" parentCode="2">
+                <Description lang="en">Hundreds</Description>
+            </Code>
+            <Code value="3" parentCode="3">
+                <Description lang="en">Thousands</Description>
+            </Code>
+            <Code value="4" parentCode="4">
+                <Description lang="en">Tens of thousands</Description>
+            </Code>
+            <Code value="5" parentCode="5">
+                <Description lang="en">Hundreds of thousands</Description>
+            </Code>
+            <Code value="6" parentCode="6">
+                <Description lang="en">Millions</Description>
+            </Code>
+            <Code value="7" parentCode="7">
+                <Description lang="en">Tens of millions</Description>
+            </Code>
+            <Code value="8" parentCode="8">
+                <Description lang="en">Hundreds of millions</Description>
+            </Code>
+            <Code value="9" parentCode="9">
+                <Description lang="en">Billions</Description>
+            </Code>
+            <Code value="10" parentCode="10">
+                <Description lang="en">Tens of billions</Description>
+            </Code>
+            <Code value="11" parentCode="11">
+                <Description lang="en">Hundreds of billions</Description>
+            </Code>
+            <Code value="12" parentCode="12">
+                <Description lang="en">Trillions</Description>
+            </Code>
+            <Code value="13" parentCode="13">
+                <Description lang="en">Tens of trillions</Description>
+            </Code>
+            <Code value="14" parentCode="14">
+                <Description lang="en">Hundreds of trillions</Description>
+            </Code>
+            <Code value="15" parentCode="15">
+                <Description lang="en">Quadrillions</Description>
+            </Code>
+            <Code value="-1" parentCode="-1">
+                <Description lang="en">Tenths</Description>
+            </Code>
+            <Code value="-2" parentCode="-2">
+                <Description lang="en">Hundredths</Description>
+            </Code>
+            <Code value="-3" parentCode="-3">
+                <Description lang="en">Thousandths</Description>
+            </Code>
+            <Code value="-4" parentCode="-4">
+                <Description lang="en">Ten-thousandths</Description>
+            </Code>
+            <Code value="-5" parentCode="-5">
+                <Description lang="en">Hundred-thousandths</Description>
+            </Code>
+            <Code value="-6" parentCode="-6">
+                <Description lang="en">Millionths</Description>
+            </Code>
+            <Code value="-7" parentCode="-7">
+                <Description lang="en">Ten-millionths</Description>
+            </Code>
+            <Code value="-8" parentCode="-8">
+                <Description lang="en">Hundred-millionths</Description>
+            </Code>
+            <Code value="-9" parentCode="-9">
+                <Description lang="en">Billionths</Description>
+            </Code>
+            <Code value="-10" parentCode="-10">
+                <Description lang="en">Ten-billionths</Description>
+            </Code>
+            <Code value="-11" parentCode="-11">
+                <Description lang="en">Hundred-billionths</Description>
+            </Code>
+            <Code value="-12" parentCode="-12">
+                <Description lang="en">Trillionths</Description>
+            </Code>
+            <Code value="-13" parentCode="-13">
+                <Description lang="en">Ten-trillionths</Description>
+            </Code>
+            <Code value="-14" parentCode="-14">
+                <Description lang="en">Hundred-trillionths</Description>
+            </Code>
+            <Code value="-15" parentCode="-15">
+                <Description lang="en">Quadrillionths</Description>
+            </Code>
+            <Code value="9999" parentCode="9999">
+                <Description lang="en">.</Description>
+            </Code>
+        </CodeList>
+        <CodeList id="CL_TABLE_I1_REFERENCEPERIOD" agencyID="OECD">
+            <Name lang="en">TABLE_I1_REFERENCEPERIOD codelist</Name>
+            <Code value="2013_100" parentCode="2013_100">
+                <Description lang="en">2013=100</Description>
+            </Code>
+            <Code value="2012_100" parentCode="2012_100">
+                <Description lang="en">2012=100</Description>
+            </Code>
+            <Code value="2011_100" parentCode="2011_100">
+                <Description lang="en">2011=100</Description>
+            </Code>
+            <Code value="2010_100" parentCode="2010_100">
+                <Description lang="en">2010=100</Description>
+            </Code>
+            <Code value="2009_100" parentCode="2009_100">
+                <Description lang="en">2009=100</Description>
+            </Code>
+            <Code value="2008_100" parentCode="2008_100">
+                <Description lang="en">2008=100</Description>
+            </Code>
+            <Code value="2007_100" parentCode="2007_100">
+                <Description lang="en">2007=100</Description>
+            </Code>
+            <Code value="2006_100" parentCode="2006_100">
+                <Description lang="en">2006=100</Description>
+            </Code>
+            <Code value="2005_100" parentCode="2005_100">
+                <Description lang="en">2005=100</Description>
+            </Code>
+            <Code value="2004_100" parentCode="2004_100">
+                <Description lang="en">2004=100</Description>
+            </Code>
+            <Code value="2003_100" parentCode="2003_100">
+                <Description lang="en">2003=100</Description>
+            </Code>
+            <Code value="2002_100" parentCode="2002_100">
+                <Description lang="en">2002=100</Description>
+            </Code>
+            <Code value="2001_100" parentCode="2001_100">
+                <Description lang="en">2001=100</Description>
+            </Code>
+            <Code value="2000_100" parentCode="2000_100">
+                <Description lang="en">2000=100</Description>
+            </Code>
+            <Code value="1999_100" parentCode="1999_100">
+                <Description lang="en">1999=100</Description>
+            </Code>
+            <Code value="1998_100" parentCode="1998_100">
+                <Description lang="en">1998=100</Description>
+            </Code>
+            <Code value="1997_100" parentCode="1997_100">
+                <Description lang="en">1997=100</Description>
+            </Code>
+            <Code value="1996_100" parentCode="1996_100">
+                <Description lang="en">1996=100</Description>
+            </Code>
+            <Code value="1995_100" parentCode="1995_100">
+                <Description lang="en">1995=100</Description>
+            </Code>
+            <Code value="1994_100" parentCode="1994_100">
+                <Description lang="en">1994=100</Description>
+            </Code>
+            <Code value="1993_100" parentCode="1993_100">
+                <Description lang="en">1993=100</Description>
+            </Code>
+            <Code value="1992_100" parentCode="1992_100">
+                <Description lang="en">1992=100</Description>
+            </Code>
+            <Code value="1991_100" parentCode="1991_100">
+                <Description lang="en">1991=100</Description>
+            </Code>
+            <Code value="2013" parentCode="2013">
+                <Description lang="en">2013</Description>
+            </Code>
+            <Code value="2012" parentCode="2012">
+                <Description lang="en">2012</Description>
+            </Code>
+            <Code value="2011" parentCode="2011">
+                <Description lang="en">2011</Description>
+            </Code>
+            <Code value="2010" parentCode="2010">
+                <Description lang="en">2010</Description>
+            </Code>
+            <Code value="2009" parentCode="2009">
+                <Description lang="en">2009</Description>
+            </Code>
+            <Code value="2008" parentCode="2008">
+                <Description lang="en">2008</Description>
+            </Code>
+            <Code value="2007" parentCode="2007">
+                <Description lang="en">2007</Description>
+            </Code>
+            <Code value="2006" parentCode="2006">
+                <Description lang="en">2006</Description>
+            </Code>
+            <Code value="2005" parentCode="2005">
+                <Description lang="en">2005</Description>
+            </Code>
+            <Code value="2004" parentCode="2004">
+                <Description lang="en">2004</Description>
+            </Code>
+            <Code value="2003" parentCode="2003">
+                <Description lang="en">2003</Description>
+            </Code>
+            <Code value="2002" parentCode="2002">
+                <Description lang="en">2002</Description>
+            </Code>
+            <Code value="2001" parentCode="2001">
+                <Description lang="en">2001</Description>
+            </Code>
+            <Code value="2000" parentCode="2000">
+                <Description lang="en">2000</Description>
+            </Code>
+            <Code value="1999" parentCode="1999">
+                <Description lang="en">1999</Description>
+            </Code>
+            <Code value="1998" parentCode="1998">
+                <Description lang="en">1998</Description>
+            </Code>
+            <Code value="1997" parentCode="1997">
+                <Description lang="en">1997</Description>
+            </Code>
+            <Code value="1996" parentCode="1996">
+                <Description lang="en">1996</Description>
+            </Code>
+            <Code value="1995" parentCode="1995">
+                <Description lang="en">1995</Description>
+            </Code>
+            <Code value="1994" parentCode="1994">
+                <Description lang="en">1994</Description>
+            </Code>
+            <Code value="1993" parentCode="1993">
+                <Description lang="en">1993</Description>
+            </Code>
+            <Code value="1992" parentCode="1992">
+                <Description lang="en">1992</Description>
+            </Code>
+            <Code value="1991" parentCode="1991">
+                <Description lang="en">1991</Description>
+            </Code>
+            <Code value="1990_100" parentCode="1990_100">
+                <Description lang="en">1990=100</Description>
+            </Code>
+            <Code value="2011_12" parentCode="2011_12">
+                <Description lang="en">2011-12</Description>
+            </Code>
+            <Code value="2004_05" parentCode="2004_05">
+                <Description lang="en">2004-05</Description>
+            </Code>
+            <Code value="1995_96" parentCode="1995_96">
+                <Description lang="en">1995-96</Description>
+            </Code>
+            <Code value="2012_13" parentCode="2012_13">
+                <Description lang="en">2012-13</Description>
+            </Code>
+            <Code value="2009_10" parentCode="2009_10">
+                <Description lang="en">2009-10</Description>
+            </Code>
+            <Code value="2014_100" parentCode="2014_100">
+                <Description lang="en">2014=100</Description>
+            </Code>
+            <Code value="USA_100" parentCode="USA_100">
+                <Description lang="en">USA=100</Description>
+            </Code>
+            <Code value="2014" parentCode="2014">
+                <Description lang="en">2014</Description>
+            </Code>
+            <Code value="2007Q1_100" parentCode="2007Q1_100">
+                <Description lang="en">2007Q1=100</Description>
+            </Code>
+            <Code value="2013_14" parentCode="2013_14">
+                <Description lang="en">2013-14</Description>
+            </Code>
+            <Code value="2011-12_100" parentCode="2011-12_100">
+                <Description lang="en">2011-12=100</Description>
+            </Code>
+            <Code value="2010M12_100" parentCode="2010M12_100">
+                <Description lang="en">2010M12=100</Description>
+            </Code>
+            <Code value="1982-84_100" parentCode="1982-84_100">
+                <Description lang="en">1982-84=100</Description>
+            </Code>
+            <Code value="1980_100" parentCode="1980_100">
+                <Description lang="en">1980=100</Description>
+            </Code>
+            <Code value="1993M12_100" parentCode="1993M12_100">
+                <Description lang="en">1993M12=100</Description>
+            </Code>
+            <Code value="2000M12_100" parentCode="2000M12_100">
+                <Description lang="en">2000M12=100</Description>
+            </Code>
+            <Code value="2006M12_100" parentCode="2006M12_100">
+                <Description lang="en">2006M12=100</Description>
+            </Code>
+            <Code value="2006Q2_100" parentCode="2006Q2_100">
+                <Description lang="en">2006Q2=100</Description>
+            </Code>
+            <Code value="2008M12_100" parentCode="2008M12_100">
+                <Description lang="en">2008M12=100</Description>
+            </Code>
+            <Code value="2011M12_100" parentCode="2011M12_100">
+                <Description lang="en">2011M12=100</Description>
+            </Code>
+            <Code value="2012M12_100" parentCode="2012M12_100">
+                <Description lang="en">2012M12=100</Description>
+            </Code>
+            <Code value="2015" parentCode="2015">
+                <Description lang="en">2015</Description>
+            </Code>
+            <Code value="2015_100" parentCode="2015_100">
+                <Description lang="en">2015=100</Description>
+            </Code>
+            <Code value="2015M12_100" parentCode="2015M12_100">
+                <Description lang="en">2015M12=100</Description>
+            </Code>
+            <Code value="2015M06_100" parentCode="2015M06_100">
+                <Description lang="en">2015M06=100</Description>
+            </Code>
+            <Code value="LTAVG_100" parentCode="LTAVG_100">
+                <Description lang="en">Long-term average=100</Description>
+            </Code>
+            <Code value="2014M12_100" parentCode="2014M12_100">
+                <Description lang="en">2014M12=100</Description>
+            </Code>
+            <Code value="2014_15" parentCode="2014_15">
+                <Description lang="en">2014-15</Description>
+            </Code>
+            <Code value="2016M12_100" parentCode="2016M12_100">
+                <Description lang="en">2016M12=100</Description>
+            </Code>
+            <Code value="2016" parentCode="2016">
+                <Description lang="en">2016</Description>
+            </Code>
+            <Code value="2016_100" parentCode="2016_100">
+                <Description lang="en">2016=100</Description>
+            </Code>
+            <Code value="2015_16" parentCode="2015_16">
+                <Description lang="en">2015-16</Description>
+            </Code>
+            <Code value="2017" parentCode="2017">
+                <Description lang="en">2017</Description>
+            </Code>
+            <Code value="2017_100" parentCode="2017_100">
+                <Description lang="en">2017=100</Description>
+            </Code>
+            <Code value="2017M12_100" parentCode="2017M12_100">
+                <Description lang="en">2017M12=100</Description>
+            </Code>
+            <Code value="2011Q3_100" parentCode="2011Q3_100">
+                <Description lang="en">2011Q3=100</Description>
+            </Code>
+            <Code value="2008M1_100" parentCode="2008M1_100">
+                <Description lang="en">2008M1=100</Description>
+            </Code>
+            <Code value="2017Q2_100" parentCode="2017Q2_100">
+                <Description lang="en">2017Q2=100</Description>
+            </Code>
+            <Code value="2013M12_100" parentCode="2013M12_100">
+                <Description lang="en">2013M12=100</Description>
+            </Code>
+            <Code value="2018M07_100" parentCode="2018M07_100">
+                <Description lang="en">2018M07=100</Description>
+            </Code>
+            <Code value="2017_18" parentCode="2017_18">
+                <Description lang="en">2017-18</Description>
+            </Code>
+            <Code value="2016_17" parentCode="2016_17">
+                <Description lang="en">2016-17</Description>
+            </Code>
+            <Code value="2018_100" parentCode="2018_100">
+                <Description lang="en">2018=100</Description>
+            </Code>
+            <Code value="2018M12_100" parentCode="2018M12_100">
+                <Description lang="en">2018M12=100</Description>
+            </Code>
+            <Code value="2018" parentCode="2018">
+                <Description lang="en">2018</Description>
+            </Code>
+            <Code value="2019" parentCode="2019">
+                <Description lang="en">2019</Description>
+            </Code>
+            <Code value="2019_100" parentCode="2019_100">
+                <Description lang="en">2019=100</Description>
+            </Code>
+            <Code value="2020" parentCode="2020">
+                <Description lang="en">2020</Description>
+            </Code>
+            <Code value="2020_100" parentCode="2020_100">
+                <Description lang="en">2020=100</Description>
+            </Code>
+            <Code value="2018_19" parentCode="2018_19">
+                <Description lang="en">2018-19</Description>
+            </Code>
+            <Code value="1995SEP01_100" parentCode="1995SEP01_100">
+                <Description lang="en">1995SEP01=100</Description>
+            </Code>
+        </CodeList>
+        <CodeList id="CL_TABLE_I1_TIME_FORMAT" agencyID="OECD">
+            <Name lang="en">TABLE_I1_TIME_FORMAT codelist</Name>
+            <Code value="P1Y">
+                <Description lang="en">Annual</Description>
+            </Code>
+            <Code value="P1M">
+                <Description lang="en">Monthly</Description>
+            </Code>
+            <Code value="P3M">
+                <Description lang="en">Quarterly</Description>
+            </Code>
+            <Code value="P6M">
+                <Description lang="en">Half-yearly</Description>
+            </Code>
+            <Code value="P1D">
+                <Description lang="en">Daily</Description>
+            </Code>
+        </CodeList>
+    </message:CodeLists>
+    <message:Concepts>
+        <Concept id="COU" agencyID="OECD">
+            <Name lang="en">Country</Name>
+            <Name lang="fr">Pays</Name>
+        </Concept>
+        <Concept id="CENTGOV_RATES" agencyID="OECD">
+            <Name lang="en">Central government personal income tax rates and thresholds</Name>
+            <Name lang="fr">Central government personal income tax rates and thresholds</Name>
+        </Concept>
+        <Concept id="YEA" agencyID="OECD">
+            <Name lang="en">Year</Name>
+            <Name lang="fr">Année</Name>
+        </Concept>
+        <Concept id="OBS_VALUE" agencyID="OECD">
+            <Name lang="en">Observation Value</Name>
+        </Concept>
+        <Concept id="TIME_FORMAT" agencyID="OECD">
+            <Name lang="en">Time Format</Name>
+        </Concept>
+        <Concept id="OBS_STATUS" agencyID="OECD">
+            <Name lang="en">Observation Status</Name>
+        </Concept>
+        <Concept id="UNIT" agencyID="OECD">
+            <Name lang="en">Unit</Name>
+        </Concept>
+        <Concept id="POWERCODE" agencyID="OECD">
+            <Name lang="en">Unit multiplier</Name>
+        </Concept>
+        <Concept id="REFERENCEPERIOD" agencyID="OECD">
+            <Name lang="en">Reference period</Name>
+        </Concept>
+    </message:Concepts>
+    <message:KeyFamilies>
+        <KeyFamily id="TABLE_I1" agencyID="OECD">
+            <Name lang="en">Table I.1. Central government personal income tax rates and thresholds</Name>
+            <Name lang="fr">Table I.1. Central government personal income tax rates and thresholds</Name>
+            <Components>
+                <Dimension codelist="CL_TABLE_I1_COU" conceptRef="COU" />
+                <Dimension codelist="CL_TABLE_I1_CENTGOV_RATES" conceptRef="CENTGOV_RATES" />
+                <TimeDimension codelist="CL_TABLE_I1_YEA" conceptRef="YEA" />
+                <PrimaryMeasure conceptRef="OBS_VALUE">
+                    <TextFormat textType="Double" />
+                </PrimaryMeasure>
+                <Attribute codelist="CL_TABLE_I1_OBS_STATUS" conceptRef="OBS_STATUS" assignmentStatus="Conditional" attachmentLevel="Observation" />
+                <Attribute codelist="CL_TABLE_I1_TIME_FORMAT" conceptRef="TIME_FORMAT" assignmentStatus="Conditional" attachmentLevel="Series" isTimeFormat="true" />
+                <Attribute codelist="CL_TABLE_I1_UNIT" conceptRef="UNIT" assignmentStatus="Conditional" attachmentLevel="Series" />
+                <Attribute codelist="CL_TABLE_I1_REFERENCEPERIOD" conceptRef="REFERENCEPERIOD" assignmentStatus="Conditional" attachmentLevel="Series" />
+                <Attribute codelist="CL_TABLE_I1_POWERCODE" conceptRef="POWERCODE" assignmentStatus="Conditional" attachmentLevel="Series" />
+            </Components>
+        </KeyFamily>
+    </message:KeyFamilies>
+</message:Structure>

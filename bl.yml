@@ -1,0 +1,61 @@
+prefixes:
+  ex: http://www.example.com/
+  blo: http://ontology.example.com/bls/
+  grel: http://users.ugent.be/~bjdmeest/function/grel.ttl#
+
+mappings:
+  series:
+    sources:
+      - access: /rdata/cu.series
+        referenceFormulation: csv
+        delimiter: "\t"
+
+    s:
+      function: grel:string_trim
+      parameters:
+        # Have to have the spaces after series or get Apache CSV error: Mapping for %s not found, expected one of %s
+        - [grel:valueParameter, ex:Series/$(series_id        )]
+    po:
+      - [a, blo:Series]
+      - [blo:areaCode, $(area_code)]
+      - [blo:itemCode, $(item_code)]
+      - [blo:seasonal, $(seasonal)]
+      - [blo:periodicityCode, $(periodicity_code)]
+      - [blo:baseCode, $(base_code)]
+      - [blo:basePeriod, $(base_period)]
+      - [rdfs:label, $(series_title)]
+      - [blo:footnoteCodes, $(footnote_codes)]
+      - [blo:beginYear, $(begin_year)]
+      - [blo:beginPeriod, $(begin_period)]
+      - [blo:endYear, $(end_year)]
+      - [blo:endPeriod, $(end_period)]
+
+  #     - [schema:givenName, $(firstname)]
+  #     - [schema:lastName, $(lastname)]
+  #     - p: e:debutEpisode
+  #       o:
+  #         value: $(debut episode)
+  #         datatype: xsd:integer
+  #       graphs: ex:Episodes
+  #     - p: dbo:hairColor
+  #       o:
+  #         function: grel:toUpperCase
+  #         parameters:
+  #           - [grel:valueParameter, $(hair color)]
+  #         language: en
+  #     - p: e:appearsIn
+  #       o:
+  #         mapping: episode
+  #         condition:
+  #           function: equal
+  #           parameters:
+  #             - [str1, $(debut episode), s]
+  #             - [str2, $(number), o]
+  #       g: ex:Episodes
+  # episode:
+  #   sources:
+  #     - ["episodes.csv~csv"]
+  #   s: ex:episode_$(number)
+  #   po:
+  #     - [a, schema:Episode]
+  #     - [schema:title, $(title)]

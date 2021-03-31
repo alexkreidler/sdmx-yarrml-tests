@@ -1,0 +1,181 @@
+# --- Define prefixes so we can make statements shorter and more readable. 
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> . 
+@prefix qb: <http://purl.org/linked-data/cube#> . 
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> . 
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> . 
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# --- DataSets --------------------------- 
+# --- Declare the URI for the dataset, specify where its structure is defined, 
+# --- and what its label is.
+
+<https://example.org/id/datacube/olympics>   rdf:type qb:DataSet ;   
+ qb:structure <https://example.org/id/dsd/olympics> ;   
+ rdfs:label "olympics dataset"@en ; 
+.  
+
+# --- Data Structure Definition (DSD) --------------------------- 
+# --- Declare the URI for the data structure definition, and then specify 
+# --- the unit of measurement, which will be specified as 
+# ---     sdmx-attribute:unitMeasure on the observations;
+# --- the dimensions of the cube: refArea, refPeriod, sex,competition, 
+# ---     and medaltype; 
+# --- the measured variable: numberofmedals;
+# --- and the label for the DSD.
+
+<https://example.org/id/dsd/olympics>   rdf:type qb:DataStructureDefinition ;   
+ qb:component [       rdf:type qb:ComponentSpecification ;       
+  qb:attribute sdmx-attribute:unitMeasure ;     ] ;
+ qb:component [       rdf:type qb:ComponentSpecification ;       
+  qb:dimension sdmx-dimension:refArea ;     ] ;   
+ qb:component [       rdf:type qb:ComponentSpecification ;       
+  qb:dimension sdmx-dimension:refPeriod ;     ] ;   
+ qb:component [       rdf:type qb:ComponentSpecification ;       
+  qb:dimension sdmx-dimension:sex ;     ] ;   
+ qb:component [       rdf:type qb:ComponentSpecification ;       
+  qb:dimension <https://example.org/ns/olympics#competition> ;     ] ;   
+ qb:component [       rdf:type qb:ComponentSpecification ;       
+  qb:dimension <https://example.org/ns/olympics#medaltype> ;     ] ;   
+ qb:component [       rdf:type qb:ComponentSpecification ;       
+  qb:measure <https://example.org/ns/olympics#numberofmedals> ;     ] ;   
+ rdfs:label "dsd for datacube olympics"@en ; 
+.
+
+# --- Dimension Properties ---------------------------
+# --- Specify the properties for the dimensions that are not re-used from other
+# --- vocabularies. 
+# --- Competition is a dimension for which the possible values are defined
+# --- at the URI specified for qb:codeList, and its values must be of the 
+# --- type skos:Concept.
+# --- The same goes for the medaltype dimension.     
+
+<https://example.org/ns/olympics#competition>   rdf:type qb:CodedProperty ;   
+ rdf:type qb:DimensionProperty ;   
+ qb:codeList <https://example.org/id/conceptscheme/competitions> ;   
+ rdfs:label "competition"@en ;   
+ rdfs:range skos:Concept ; 
+. 
+<https://example.org/ns/olympics#medaltype>   rdf:type qb:CodedProperty ;   
+ rdf:type qb:DimensionProperty ;   
+ qb:codeList <https://example.org/id/conceptscheme/medaltypes> ;   
+ rdfs:label "type of medal"@en ;   
+ rdfs:range skos:Concept ; 
+.  
+
+
+# --- Measure Properties --------------------------- 
+# --- Define the properties of the actual measures in the observations. 
+# --- In the DSD, we stated that qb:measure is the numberofmedals. 
+# --- Here we specify that this numberofmedals property is an observation value,
+# --- and that it must be an integer.
+
+<https://example.org/ns/olympics#numberofmedals>   rdf:type qb:MeasureProperty ;   
+ rdfs:label "number of medals"@en ;   
+ rdfs:range xsd:integer ; 
+.
+
+# --- ConceptScheme (Controlled Vocabulary) for Competitions ------ 
+# --- When we defined competition as a dimension, we stated that its values 
+# --- should come from a codeList. 
+# --- Here we define that list of codes as a ConceptScheme, and then 
+# --- each of the codes as Concepts within that ConceptScheme.
+
+<https://example.org/id/conceptscheme/competitions>   rdf:type skos:ConceptScheme ;   
+ rdfs:label "competitions"@en ;   
+ skos:hasTopConcept <https://example.org/id/concept/olympics> ;   
+ skos:hasTopConcept <https://example.org/id/concept/paralympics> ; 
+.
+
+<https://example.org/id/concept/olympics>   rdf:type skos:Concept ;   
+ rdfs:label "olympics"@en ;   
+ skos:inScheme <https://example.org/id/conceptscheme/competitions> ; 
+.
+
+<https://example.org/id/concept/paralympics>   rdf:type skos:Concept ;   
+ rdfs:label "paralympics"@en ;   
+ skos:inScheme <https://example.org/id/conceptscheme/competitions> ; 
+.  
+
+# --- ConceptScheme (Controlled Vocabulary) for Medaltypes ------ 
+# --- When we defined medaltype as a dimension, we stated that its values 
+# --- should come from a codeList. 
+# --- Here we define that list of codes as a ConceptScheme, 
+# --- which contains a Concept called allmedals, 
+# --- which in turn has a skos:narrower relation to the bronze, gold, 
+# --- and silver medal Concepts. 
+
+<https://example.org/id/conceptscheme/medaltypes>   rdf:type skos:ConceptScheme ;   
+ rdfs:label "types of medal"@en;   
+ skos:hasTopConcept <https://example.org/id/concept/allmedals> ; 
+. 
+
+<https://example.org/id/concept/allmedals>   rdf:type skos:Concept ;   
+ rdfs:label "all medals"@en ;   
+ skos:inScheme <https://example.org/id/conceptscheme/medaltypes> ;   
+ skos:narrower <https://example.org/id/concept/bronzemedal> ;   
+ skos:narrower <https://example.org/id/concept/goldmedal> ;   
+ skos:narrower <https://example.org/id/concept/silvermedal> ; 
+.
+
+<https://example.org/id/concept/bronzemedal>   rdf:type skos:Concept ;   
+ rdfs:label "bronze medal"@en ;   
+ skos:inScheme <https://example.org/id/conceptscheme/medaltypes> ;
+ skos:broader <https://example.org/id/concept/allmedals> ; 
+. 
+
+<https://example.org/id/concept/goldmedal>   rdf:type skos:Concept ;   
+ rdfs:label "gold medal"@en ;   
+ skos:inScheme <https://example.org/id/conceptscheme/medaltypes> ;   
+ skos:broader <https://example.org/id/concept/allmedals> ; 
+. 
+
+<https://example.org/id/concept/silvermedal>   rdf:type skos:Concept ;   
+ rdfs:label "silver medal"@en ;   
+ skos:inScheme <https://example.org/id/conceptscheme/medaltypes> ;   
+ skos:broader <https://example.org/id/concept/allmedals> ; 
+.
+
+# --- Observations --------------------------- 
+# --- We have two observations:
+# --- The first observation is for gold medals won by female athletes 
+# --- competing for the USA at the 2012 olympic games.
+# --- We assign a URI to the observation,
+# --- state that it is an Observation,
+# --- and that it is within the Olympics data cube,
+# --- that the unit of measure is a number, 
+# --- that refArea is the country USA, i.e. the athlete was from the USA,
+# --- that refPeriod is the year 2012, i.e. the 2012 edition of the games,
+# --- that sex is female,i.e. the athlete in question is female,
+# --- that the games were Olympics (as opposed to Paralympics),
+# --- that the type of medal won was a gold medal,
+# --- and that the number of medals won was 105.
+
+<https://example.org/id/observation/2012/usa/sex-f/gold/count>   rdf:type qb:Observation ;   
+ qb:dataSet <https://example.org/id/datacube/olympics> ;   
+ sdmx-attribute:unitMeasure <http://qudt.org/vocab/unit#Number> ;   
+ sdmx-dimension:refArea <http://publications.europa.eu/resource/authority/country/USA> ;   
+ sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;   
+ sdmx-dimension:sex <http://purl.org/linked-data/sdmx/2009/code#sex-F> ;   
+ rdfs:label "gold medals won by female athletes from the USA at the 2012 Olympics" ;   
+ <https://example.org/ns/olympics#competition> <https://example.org/id/concept/olympics> ;   
+ <https://example.org/ns/olympics#medaltype>	<https://example.org/id/concept/goldmedal> ;   
+ <https://example.org/ns/olympics#numberofmedals> 105 ; 
+.
+
+# --- The second observation is for male athletes from the USA,
+# --- winning gold medals at the 2012 Olympics.
+
+<https://example.org/id/observation/2012/usa/sex-m/gold/count> rdf:type qb:Observation ;   
+ qb:dataSet <https://example.org/id/datacube/olympics> ;   
+ sdmx-attribute:unitMeasure <http://qudt.org/vocab/unit#Number> ;   
+ sdmx-dimension:refArea <http://publications.europa.eu/resource/authority/country/USA> ;   
+ sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;   
+ sdmx-dimension:sex <http://purl.org/linked-data/sdmx/2009/code#sex-M> ;   
+ rdfs:label "gold medals won by male athletes from the USA at the 2012 Olympics" ;   
+ <https://example.org/ns/olympics#competition> <https://example.org/id/concept/olympics> ;   
+ <https://example.org/ns/olympics#medaltype> <https://example.org/id/concept/goldmedal> ;   
+ <https://example.org/ns/olympics#numberofmedals> 42 ; 
